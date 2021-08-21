@@ -1,0 +1,10 @@
+vsim -gui work.vga_sync_tb(test)
+add wave -position insertpoint  \
+sim:/vga_sync_tb/rst \
+sim:/vga_sync_tb/clk \
+sim:/vga_sync_tb/hor_sync \
+sim:/vga_sync_tb/ver_sync \
+sim:/vga_sync_tb/video_en \
+sim:/vga_sync_tb/hor_count \
+sim:/vga_sync_tb/ver_count
+run 30 ms

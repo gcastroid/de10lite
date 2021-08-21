@@ -1,0 +1,10 @@
+vsim -gui work.uart_tx_tb(test)
+add wave -position insertpoint  \
+sim:/uart_tx_tb/rst \
+sim:/uart_tx_tb/clk \
+sim:/uart_tx_tb/uart_te \
+sim:/uart_tx_tb/byte_tx \
+sim:/uart_tx_tb/uart_tb \
+sim:/uart_tx_tb/uart_tc \
+sim:/uart_tx_tb/uart_tx
+run 300 us

@@ -1,0 +1,9 @@
+vsim -gui work.pwm_tb(test)
+add wave -position insertpoint  \
+sim:/pwm_tb/rst \
+sim:/pwm_tb/clk \
+sim:/pwm_tb/prescaler \
+sim:/pwm_tb/disp \
+sim:/pwm_tb/duty \
+sim:/pwm_tb/pwm
+run 10 ms
